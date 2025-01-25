@@ -47,24 +47,35 @@ As tecnologias usadas nesse projeto.
 ### 1 - Carregar o Template
 -  Na pasta  public / template, coloque o arquivo PDF do seu template de certificado.
 
-![Start Page](https://github.com/rasta-slaine/DncWeather/blob/main/assets/img/git/img-1.png)
+![Start Page](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-1.png)
 
 ### 2 - Configurar a Posição do Nome  
 - na funcão, Ajuste as coordenadas X e Y para posicionar corretamente o nome no template.
 
-![Midle Page](https://github.com/rasta-slaine/DncWeather/blob/main/assets/img/git/img-2.png)
+![Midle Page](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-2.png)
 
 ### 3 -  Escolher o Modo de Geração
 - Prencha o formulário, e clique no botão
-![Form](https://github.com/rasta-slaine/DncWeather/blob/main/assets/img/git/img-3.png)
+![Form](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-3.png)
 
 ### 4 - Visualizar e Gerar
 - Em seguida os dados da sua localizão e o clima irão aparecer
-![results](https://github.com/rasta-slaine/DncWeather/blob/main/assets/img/git/img-4.png)
+![results](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-4.png)
 
-### 4 - Abaixe os Arquivos
+### 5 - Abaixe os Arquivos
 - Em seguida apos gerar, você pode abaixar os arquivos separadamente ou todos de uma vez 
-![results](https://github.com/rasta-slaine/DncWeather/blob/main/assets/img/git/img-4.png)
+![results](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-5.png)
+
+
+### 6 - Abaixe os Arquivos
+- Em seguida apos gerar, você pode abaixar os arquivos separadamente ou todos de uma vez 
+![results](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-6.png)
+
+
+### 7 - Abaixe os Arquivos
+- Em seguida apos gerar, você pode abaixar os arquivos separadamente ou todos de uma vez 
+![results](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-7.png)
+
 
 
 ## Contact
