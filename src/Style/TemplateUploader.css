@@ -1,0 +1,25 @@
+.template-uploader-container {
+    margin-top: 20px;
+  }
+  
+  .upload-section {
+    margin: 20px 0;
+  }
+  
+  .position-section {
+    margin: 20px 0;
+  }
+  
+  .position-inputs {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .position-input {
+    width: 80px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
