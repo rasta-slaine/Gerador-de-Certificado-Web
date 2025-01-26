@@ -41,39 +41,38 @@ As tecnologias usadas nesse projeto.
 
 
 
-
 ## Overview : )
 
-### 1 - Carregar o Template
--  Na pasta  public / template, coloque o arquivo PDF do seu template de certificado.
+### 1 - Na Tela inicial
+-  Tem a opção de escolher 1 ou mais certificados para gerar.
 
 ![Start Page](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-1.png)
 
-### 2 - Configurar a Posição do Nome  
-- na funcão, Ajuste as coordenadas X e Y para posicionar corretamente o nome no template.
+### 2 - Gerar um certificado 
+- Coloque um nome no formulario     
 
 ![Midle Page](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-2.png)
 
-### 3 -  Escolher o Modo de Geração
-- Prencha o formulário, e clique no botão
+### 3 - Pré - visualização do certificado
+- Visualização do certificado e clique em abaixar
 ![Form](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-3.png)
 
-### 4 - Visualizar e Gerar
-- Em seguida os dados da sua localizão e o clima irão aparecer
+### 4 - Baixando o arquivo
+- Salve o arquivo
 ![results](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-4.png)
 
-### 5 - Abaixe os Arquivos
-- Em seguida apos gerar, você pode abaixar os arquivos separadamente ou todos de uma vez 
+### 5 -  Gerando varios certificados
+- arasta ou solta um arquivo excel ou txt com os nomes 
 ![results](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-5.png)
 
 
-### 6 - Abaixe os Arquivos
-- Em seguida apos gerar, você pode abaixar os arquivos separadamente ou todos de uma vez 
+### 6 - Arquivo excel
+- selecione o arquivo com os nomes
 ![results](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-6.png)
 
 
-### 7 - Abaixe os Arquivos
-- Em seguida apos gerar, você pode abaixar os arquivos separadamente ou todos de uma vez 
+### 7 - Baixe e visualize os certificados
+- selecione os arquivos que queira abaixar individualmente ou em grupo ou pode visualizar um certificado
 ![results](https://raw.githubusercontent.com/rasta-slaine/Gerador-de-Certificado-Web/refs/heads/main/public/images/p1-img-7.png)
 
 
