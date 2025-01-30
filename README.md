@@ -22,7 +22,7 @@ As tecnologias usadas nesse projeto.
 
 * Clone o repositório:
    ```bash
-   git clone https://github.com/rasta-slaine/DncWeather
+   git clone https://github.com/rasta-slaine/Gerador-de-Certificado-Web
    cd DncWeather
    ```
    

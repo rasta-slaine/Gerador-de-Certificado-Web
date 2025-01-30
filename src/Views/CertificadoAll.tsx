@@ -7,27 +7,42 @@ import JSZip from "jszip";
 import { saveAs } from "file-saver";
 
 const  CertificadoAll = () => {
-  const [generatedPdfs, setGeneratedPdfs] = useState([]);
+
+  type PdfInfo = {
+    nome: string;
+    url: string;
+  };
+
+
+  const [generatedPdfs, setGeneratedPdfs] = useState<PdfInfo[]>([]);
   const [totalNomes, setTotalNomes] = useState(0);
   const [loading, setLoading] = useState(false);
 
-  const processFile = async (file) => {
+
+  const processFile = async (file: File) => {
+
     setLoading(true);
+
     try {
-      let names = [];
+      let names: string[]  = [];
+
       if (file.name.endsWith(".xlsx") || file.name.endsWith(".xls")) {
+
         const data = await file.arrayBuffer();
         const workbook = XLSX.read(data, { type: "array" });
         const sheet = workbook.Sheets[workbook.SheetNames[0]];
-        const rows = XLSX.utils.sheet_to_json(sheet);
+        const rows = XLSX.utils.sheet_to_json<{Nome:string}>(sheet);
+        
         names = rows.map((row) => row.Nome);
+
       } else if (file.name.endsWith(".txt")) {
         const text = await file.text();
-        names = text.split("\n").map((line) => line.trim());
+        names = text.split("\n").map((line: string) => line.trim());
       }
 
       setTotalNomes(names.length);
-      generateCertificates(names);
+      names.forEach((name)=>generateCertificates(name));
+
     } catch (error) {
       console.error("Erro ao processar o arquivo:", error);
     } finally {
@@ -35,7 +50,7 @@ const  CertificadoAll = () => {
     }
   };
 
-  const handleGenerateCertificate = async (nome) => {
+  const handleGenerateCertificate = async (nome: string) => {
     try {
       const existingPdfBytes = await fetch("/template/certificado-2.pdf").then((res) =>
         res.arrayBuffer()
@@ -69,9 +84,9 @@ const  CertificadoAll = () => {
     } catch (error) {
       console.error("Erro ao gerar o certificado:", error);
     }
-  };
+  }; 
 
-  const generateCertificates = async (names) => {
+  const generateCertificates = async (names: string) => {
     for (const name of names) {
       await handleGenerateCertificate(name);
     }
@@ -113,9 +128,19 @@ const  CertificadoAll = () => {
         accept=".xlsx, .xls, .txt"
         style={{ display: "none" }}
         id="file-upload"
-        onChange={(e) => processFile(e.target.files[0])}
+        onChange={(e) => {
+          if (e.target.files && e.target.files.length > 0){
+            processFile(e.target.files[0])
+          }
+        }}
       />
-      <button className="btn-2" onClick={() => document.getElementById("file-upload").click()}>
+
+      <button className="btn-2" onClick={() =>{
+        const fileInput =  document.getElementById("file-upload") as HTMLInputElement
+        if(fileInput){
+          fileInput.click()
+        }}
+        }>
         Procurar Arquivo
       </button>
 

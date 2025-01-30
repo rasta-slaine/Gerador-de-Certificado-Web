@@ -4,7 +4,7 @@ import  "../style/CertificadoPages.css"
 import  { useState } from "react";
 import { PDFDocument,rgb, StandardFonts } from "pdf-lib"; // Biblioteca para manipular PDFs
 import * as fontkit from "fontkit" // Biblioteca para manipular fontes
-import * as XLSX from "xlsx"; // Para processar arquivos Excel
+//import * as XLSX from "xlsx"; // Para processar arquivos Excel
     
 
 const CertificadoOne = () => {
@@ -16,6 +16,7 @@ const CertificadoOne = () => {
   
 
     const handleGenerateCertificate = async (nome:string) => {
+          setLoading(true);
         try {
           // Carrega o template do certificado
           const existingPdfBytes = await fetch("/template/certificado-2.pdf").then(
@@ -73,8 +74,8 @@ const CertificadoOne = () => {
 
 
 
-
-      const processFile = async (file) => {
+/*
+      const processFile = async (file:File) => {
         setLoading(true);
         try {
           if (file.name.endsWith(".xlsx") || file.name.endsWith(".xls")) {
@@ -100,7 +101,7 @@ const CertificadoOne = () => {
           setLoading(false);
         }
       };
-    
+
       const generateCertificates = async (names:string) => {
         for (const name of names) {
           await handleGenerateCertificate(name);
@@ -108,7 +109,7 @@ const CertificadoOne = () => {
         alert("Certificados gerados com sucesso!");
       };
 
-
+  */
 
   return (
       <div className="certificado-container">
