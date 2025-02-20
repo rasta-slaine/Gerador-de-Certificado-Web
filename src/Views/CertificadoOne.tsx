@@ -3,7 +3,8 @@ import  "../style/CertificadoPages.css"
 
 import  { useState } from "react";
 import { PDFDocument,rgb, StandardFonts } from "pdf-lib"; // Biblioteca para manipular PDFs
-import * as fontkit from "fontkit" // Biblioteca para manipular fontes
+//import * as fontkit from "fontkit" // Biblioteca para manipular fontes
+import fontkit from "@pdf-lib/fontkit"; 
 //import * as XLSX from "xlsx"; // Para processar arquivos Excel
     
 

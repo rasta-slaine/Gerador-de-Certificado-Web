@@ -1,7 +1,7 @@
 import "../style/CertificadoPages.css";
 import { useState } from "react";
 import { PDFDocument, rgb } from "pdf-lib";
-import * as fontkit from "fontkit";
+import fontkit from "@pdf-lib/fontkit"; 
 import * as XLSX from "xlsx";
 import JSZip from "jszip";
 import { saveAs } from "file-saver";
@@ -41,7 +41,8 @@ const  CertificadoAll = () => {
       }
 
       setTotalNomes(names.length);
-      names.forEach((name)=>generateCertificates(name));
+      generateCertificates(names)
+      //names.forEach((name)=>generateCertificates(name));
 
     } catch (error) {
       console.error("Erro ao processar o arquivo:", error);
